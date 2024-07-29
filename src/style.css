@@ -98,8 +98,8 @@ navigation-Bar
 .section-1{
     margin-top: 10px;
     width: 100%;
-    height: 660px;
-    background-image: url(../assets/images/SGA_Homepage_Redesign_Hero_Jan2023_1.jpg);
+    height: 670px;
+    background-image: linear-gradient(rgba(41,65,59,0) 0%, rgba(41,65,59,0.98) 80%), url(../assets/images/SGA_Homepage_Redesign_Hero_Jan2023_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -113,11 +113,14 @@ navigation-Bar
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 0; 
+    bottom: 30px; 
     left: 150px; 
     right: 150px;
     width: auto; 
 
+}
+.card-section div:first-child{
+    bottom: 20px;
 }
 #card-text{
     margin-top: 40px;
@@ -132,6 +135,8 @@ navigation-Bar
     margin: 20px;
     background:#ffff;
     border-radius: 10px;
+    position: relative;
+    cursor: pointer;
 }
 .card img{
     width: 200px; 
@@ -145,22 +150,41 @@ navigation-Bar
     margin-top: 2px;
     text-align: center;
 }
+/* 
+
+    upper Arrow 
+    
+*/
+.arrow{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top:641px;
+    left:280px;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-bottom: 30px solid white;
+    transition: 0.5s;
+    /* background-color: red; */
+
+}
 
 /* 
 
  Features Courses:-
 
 */
-h2{
+.features-courses h2{
     text-align: center;
     font-size: 40px;
-    margin: 30px;
+    margin: 40px;
     padding: 10px;
+    color: #006340;
 }
 .features-courses {
     /* background-color: aqua; */
     height: 800px;
-    color: #000000;
+    
 }
 .features-section{
     display: flex;
@@ -194,7 +218,7 @@ h2{
     background-size: cover;
     background-position: center;
 }
-h3{
+#card-body h3{
     font-size: 20px;
     font-family: sans-serif;
     padding: 5px;
@@ -232,7 +256,7 @@ h3{
 }
 
 .meter::-webkit-meter-optimum-value {
-    background: gray;
+    background:#1a2a26;
 }
 .view-all{
     display: flex;
@@ -250,6 +274,29 @@ h3{
     color: #fff;
     border: none;
     
+}
+
+/* 
+    About Starbucks Global Academy
+*/
+
+.section-2{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 150px;
+    margin-bottom: 100px;
+}
+
+.about-starbucks{
+    border: 1px solid gray;
+    width: 550px;
+}
+.global-community{
+    border: 1px solid gray;
+    width: 550px;
+}
+.global-community img{
+
 }
 
 
