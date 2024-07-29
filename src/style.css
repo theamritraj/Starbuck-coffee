@@ -65,6 +65,8 @@ navigation-Bar
 .nav-bar select{
     border: none;
     font-size: 17px;
+    height: 140px;
+    background-color: #67c107;
     
 }
 .nav-bar button{
